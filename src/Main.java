@@ -8,11 +8,17 @@ public class Main {
         System.out.println("argumento 2:" + args[1]); */
 
         //estudando padroes de desenvolvimento e conceitos
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         System.out.println("Olá, informe seu nome");
         String name = scanner.next();
         System.out.println("Informe sua idade");
         int age = scanner.nextInt();
-        System.out.printf("Olá %s sua idade é %s \n", name, age);
+        System.out.printf("Olá %s sua idade é %s \n", name, age);*/
+
+        var scanner = new Scanner(System.in);
+        System.out.println("Quanto é 2 + 2 ?");
+        var result = scanner.nextInt();
+        var isRight = result == 4;
+        System.out.printf("O resultado é 4, você acertou?  (%s)", isRight);
     }
 }
