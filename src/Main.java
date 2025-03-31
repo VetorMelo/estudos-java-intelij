@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        /*System.out.println("Hello World!");
         System.out.println("argumento 1:" + args[0]);
         System.out.println("argumento 2:" + args[1]);
 
@@ -49,9 +49,18 @@ public class Main {
         System.out.println("Informe o seu nao de nascimento");
         var year = scanner.nextInt();
         var age = baseYear - year;
-        System.out.printf("Olá %s você tem %s anos \n", name, age);
+        System.out.printf("Olá %s você tem %s anos \n", name, age);*/
 
+        //Estudando estrutura condicional com if
+        var scanner = new Scanner(System.in);
+        System.out.println("Informe o seu nome");
+        var name = scanner.next();
+        System.out.println("Informe sua idade");
+        var age = scanner.nextInt();
 
+        if (age >= 18) System.out.printf("%s tem %s anos, você pode dirigir \n", name, age);
+
+        System.out.println("Fim do programa");
 
 
     }
