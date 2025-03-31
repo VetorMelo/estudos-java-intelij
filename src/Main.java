@@ -57,8 +57,18 @@ public class Main {
         var name = scanner.next();
         System.out.println("Informe sua idade");
         var age = scanner.nextInt();
+        System.out.println("Você é emancipado?");
+        var isEmancipated = scanner.next().equalsIgnoreCase("s");
 
-        if (age >= 18) System.out.printf("%s tem %s anos, você pode dirigir \n", name, age);
+
+        if (age >= 18) {
+            System.out.printf("%s tem %s anos, você pode dirigir \n", name, age);
+        } else if (age >= 16 && isEmancipated) {
+            System.out.printf("%s, apesar de você ter %s anos, você é emancipado e pode dirigir \n", name, age);
+        }
+        else {
+            System.out.printf("%s, você não pode dirigir \n", name);
+        }
 
         System.out.println("Fim do programa");
 
