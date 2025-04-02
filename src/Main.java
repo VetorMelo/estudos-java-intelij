@@ -70,7 +70,7 @@ public class Main {
             System.out.printf("%s, você não pode dirigir \n", name);
         }
 
-        System.out.println("Fim do programa");*/
+        System.out.println("Fim do programa");
 
 
         //Criando classe
@@ -81,6 +81,11 @@ public class Main {
         female.setName("Maria");
         female.setAge(10);
         System.out.printf("Male name: " + male.getName() + " age: " + male.getAge());
-        System.out.printf("Female name: " + female.getName() + " age: " + female.getAge());
+        System.out.printf("Female name: " + female.getName() + " age: " + female.getAge());*/
+
+        //Trabalhando com Records
+        var person = new Person("Joao");
+        System.out.println(person);
+
     }
 }
