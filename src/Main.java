@@ -49,7 +49,7 @@ public class Main {
         System.out.println("Informe o seu nao de nascimento");
         var year = scanner.nextInt();
         var age = baseYear - year;
-        System.out.printf("Olá %s você tem %s anos \n", name, age);*/
+        System.out.printf("Olá %s você tem %s anos \n", name, age);
 
         //Estudando estrutura condicional com if
         var scanner = new Scanner(System.in);
@@ -70,8 +70,17 @@ public class Main {
             System.out.printf("%s, você não pode dirigir \n", name);
         }
 
-        System.out.println("Fim do programa");
+        System.out.println("Fim do programa");*/
 
 
+        //Criando classe
+        var male = new Person();
+        male.setName("João");
+        male.setAge(12);
+        var female = new Person();
+        female.setName("Maria");
+        female.setAge(10);
+        System.out.printf("Male name: " + male.getName() + " age: " + male.getAge());
+        System.out.printf("Female name: " + female.getName() + " age: " + female.getAge());
     }
 }
